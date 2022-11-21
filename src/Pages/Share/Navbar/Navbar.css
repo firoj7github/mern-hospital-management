@@ -1,0 +1,16 @@
+.navbar-size{
+    background-color: darkcyan;
+    position: sticky;
+    top: 0;
+    transition: 1s;
+    z-index: 1;
+}
+.white{
+   background-color: rgb(161, 49, 71);
+   
+}
+.ul-size{
+    margin-left: 260px;
+    font-size: 18px;
+    color: rgb(224, 184, 82);
+}

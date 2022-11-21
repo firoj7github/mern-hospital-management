@@ -1,0 +1,11 @@
+.banner-all{
+    width: 100%;
+    height: 641px;
+    background-color: darkcyan;
+}
+.banner-text{
+    width: 500px;
+}
+.banner-pic{
+    z-index: 0;
+}
