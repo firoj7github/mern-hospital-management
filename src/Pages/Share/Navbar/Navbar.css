@@ -3,7 +3,7 @@
     position: sticky;
     top: 0;
     transition: 1s;
-    z-index: 1;
+    z-index: 2;
 }
 .white{
    background-color: rgb(161, 49, 71);

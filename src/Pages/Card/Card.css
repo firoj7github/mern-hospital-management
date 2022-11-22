@@ -5,33 +5,54 @@
 .card-item{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-   width: 1200px;
-   
-   margin-top: -50px;
-   z-index: 1;
-   position: absolute;
+    width: 1200px;
+    margin-left: 75px;
+    margin-top: -90px;
+    z-index: 1;
+    position: absolute;
 }
 .card-1{
-    background-color: aquamarine;
+    background-color: rgb(80, 196, 157);
     width: 300px;
-    height: 320px;
+    height: 250px;
     clip-path: polygon(0 1%, 100% 15%, 100% 90%, 0% 100%);
+    border-radius: 2px;
+    z-index: 1;
 }
 .card-2{
-    background-color: brown;
+    background-color: rgb(57, 160, 126);
     width: 300px;
-    height: 320px;
+    height: 250px;
     clip-path: polygon(0 15%, 100% 0, 100% 99%, 0 90%);
+    z-index: 1;
 }
 .card-3{
-   background-color: coral;
+    background-color: rgb(80, 196, 157);
     width: 300px;
-    height: 320px;
-    clip-path: polygon(0 1%, 100% 15%, 100% 90%, 0% 100%);
+    height: 250px;
+    clip-path: polygon(0 0, 100% 15%, 100% 90%, 0 100%);
+    z-index: 1;
+    /* clip-path: polygon(0 1%, 100% 15%, 100% 90%, 0% 100%); */
 }
 .card-4{
-   background-color: rgb(85, 26, 4);
+    background-color: rgb(57, 160, 126);
     width: 300px;
-    height: 320px;
+    height: 250px;
     clip-path: polygon(0 15%, 100% 0, 100% 99%, 0 90%);
+    z-index: 1;
+}
+.card-icon{
+    font-size: 75px;
+    position: absolute;
+    margin-left: 115px;
+    margin-top: 55px;
+  
+    
+}
+.card-header{
+    margin-top: 145px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
 }

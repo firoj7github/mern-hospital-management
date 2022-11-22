@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Barlow+Semi+Condensed&family=Monoton&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Raleway:wght@500&family=Roboto+Condensed&display=swap');
+
+
+.item-all{
+    width: 100%;
+    height: 800px;
+}
+.item-header{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.item-para{
+    width: 800px;
+    margin-left: 320px;
+}
+.item-slide-para{
+    width: 600px;
+}
+.item-slide-img img{
+    width: 1150px;
+    height: 500px;
+    margin-left: 276px;
+}
+.item-slide-1{
+    width: 500px;
+    height: 500px;
+}
+.item-divided{
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    margin-top: 40px;
+}
+.item-1{
+  
+    width: 500px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item-2{
+ 
+    width: 500px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item-3{
+ 
+    width: 500px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item-child-1{
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.item-child-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.item-child-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.item-icon{
+    font-size: 75px;
+    margin-top: 25px;
+    
+}
+.item-child-header{
+    padding-left: 17px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.item-child-dec{
+    width:400px ;
+    padding-left: 17px;
+}
