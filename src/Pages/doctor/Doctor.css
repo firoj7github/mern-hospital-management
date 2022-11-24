@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Barlow+Semi+Condensed&family=Fira+Sans&family=Monoton&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;500&family=Roboto+Condensed&display=swap');
+
+.doctor-all{
+    width: 100%;
+    height: 670px;
+}
+.doctor-header{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 45px;
+    margin-bottom: 7px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.doctor{
+    width: 70%;
+    display: grid;
+    margin-left: 220px;
+    padding-top: 75px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.doctor-1-img{
+    width: 270px;
+    height: 320px;
+}
+.doctor-2-img{
+    width: 270px;
+    height: 320px;
+}
+.doctor-3-img{
+    width: 270px;
+    height: 320px;
+    margin-left: 15px;
+}
+.doctor-title{
+    background-color: rgb(99, 124, 124);
+    width: 250px;
+    height: 70px;
+    border-radius: 2px;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.doctor-para{
+    margin-left: 340px;
+    width: 700px;
+    font-size: 17px;
+    
+}
