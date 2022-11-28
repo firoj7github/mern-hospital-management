@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { $ } from 'react-jquery-plugin';
 import './Navbar.css'
 import img from '../../../image/10.png'
+import { Link } from 'react-router-dom';
 
  const Navbar = () => {
   useEffect(()=>{
@@ -32,8 +33,10 @@ import img from '../../../image/10.png'
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal ul-size">
-      <li><a>Home</a></li>
-      <li><a>Appionment</a></li>
+     
+      <Link to="/"><li><a>Home</a></li></Link>
+      <Link to="/appionment"><li><a>Appionment</a></li></Link>
+      
       <li><a>About</a></li>
       <li><a>Signup</a></li>
     </ul>

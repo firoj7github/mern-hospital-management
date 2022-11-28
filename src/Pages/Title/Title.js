@@ -15,21 +15,21 @@ const Title = () => {
 
 // Start counting, do this on DOM ready or with Waypoints.
 counterUp( el, {
-duration: 6000,
+duration: 7000,
 delay: 16,
 } );
     const nl = document.querySelector( '.counter-1' )
 
 // Start counting, do this on DOM ready or with Waypoints.
 counterUp( nl, {
-duration: 6000,
+duration: 7000,
 delay: 16,
 } )
     const ll = document.querySelector( '.counter-2' )
 
 // Start counting, do this on DOM ready or with Waypoints.
 counterUp( ll, {
-duration: 6000,
+duration: 7000,
 delay: 16,
 } )
     },[]);

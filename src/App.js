@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Appionment from './Pages/appionment/Appionment';
 import Home from './Pages/Home/Home';
 import Footer from './Pages/Share/Navbar/Footer/Footer';
 import Navbar from './Pages/Share/Navbar/Navbar';
@@ -11,6 +12,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}/>
+        <Route path='/appionment' element={<Appionment></Appionment>}/>
       </Routes>
      <Footer></Footer>
     </div>
