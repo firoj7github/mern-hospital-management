@@ -36,9 +36,9 @@ import { Link } from 'react-router-dom';
      
       <Link to="/"><li><a>Home</a></li></Link>
       <Link to="/appionment"><li><a>Appionment</a></li></Link>
+      <Link to="/login"><li><a>Login</a></li></Link>
       
-      <li><a>About</a></li>
-      <li><a>Signup</a></li>
+      
     </ul>
   </div>
  

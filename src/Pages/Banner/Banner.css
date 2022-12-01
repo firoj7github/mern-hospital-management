@@ -18,3 +18,55 @@
   border-radius: 7px;
   color: white;
 }
+@media  (min-width:300px) and (max-width:420px) 
+{
+    .banner-all{
+        width: auto;
+        height: auto;
+        background-color: darkcyan;
+    }
+    .banner-pic{
+        margin-left: -70px;
+    }
+}
+@media  (min-width:421px) and (max-width:540px) 
+{
+    .banner-all{
+        width: auto;
+        height: auto;
+        background-color: darkcyan;
+    }
+    .banner-pic{
+        margin-left: -50px;
+    }
+}
+@media  (min-width:541px) and (max-width:768px) 
+{
+    .banner-all{
+        width: auto;
+        height: auto;
+        background-color: darkcyan;
+    }
+    .banner-pic{
+        width:750px;
+        height: 540px;
+        margin-left: -40px;
+        margin-bottom: 10px;
+    }
+}
+@media  (min-width:769px) and (max-width:820px) 
+{
+    .banner-all{
+        width: auto;
+        height: auto;
+        background-color: darkcyan;
+    }
+}
+@media  (min-width:821px) and (max-width:1024px) 
+{
+    .banner-all{
+        width: auto;
+        height: auto;
+        background-color: darkcyan;
+    }
+}

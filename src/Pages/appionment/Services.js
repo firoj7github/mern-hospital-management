@@ -16,7 +16,7 @@ import React from 'react'
     <div className="card-actions justify-end">
       
       <label for="booking-modal" disabled={slots.length===0}
-      onClick={()=>setTreatment(service)} class="btn btn-green-300">Book Appionment</label>
+      onClick={()=>setTreatment(service)} className="btn btn-green-300">Book Appionment</label>
     </div>
   </div>
 </div>

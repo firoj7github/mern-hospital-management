@@ -49,3 +49,14 @@
     font-size: 17px;
     
 }
+
+@media  (min-width:300px) and (max-width:420px) 
+{}
+@media  (min-width:421px) and (max-width:540px) 
+{}
+@media  (min-width:541px) and (max-width:768px) 
+{}
+@media  (min-width:769px) and (max-width:820px) 
+{}
+@media  (min-width:821px) and (max-width:1024px) 
+{}

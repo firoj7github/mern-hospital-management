@@ -7,7 +7,7 @@ import BookingModal from './BookingModal';
     const [services, setServices]=useState([]);
     const [treatment, setTreatment]=useState(null);
     useEffect(()=>{
-        fetch('services.json')
+        fetch('http://localhost:5000/service')
         .then(res =>res.json())
         .then(data => setServices(data));
     },[])
@@ -19,7 +19,7 @@ import BookingModal from './BookingModal';
                 services.map(service=><Services setTreatment={setTreatment} service={service}></Services>)
             }
         </div>
-        {treatment && <BookingModal date={date} treatment={treatment}></BookingModal>}
+        {treatment && <BookingModal date={date} setTreatment={setTreatment} treatment={treatment}></BookingModal>}
     </div>
   )
 }
