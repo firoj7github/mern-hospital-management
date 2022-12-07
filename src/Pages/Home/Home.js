@@ -17,7 +17,6 @@ const Home = () => {
         <Item></Item>
         <Title></Title>
         <Side></Side>
-        <Count></Count>
         <Doctor></Doctor>
         <Contact></Contact>
         

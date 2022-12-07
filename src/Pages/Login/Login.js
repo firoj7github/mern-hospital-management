@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import auth from '../../../src/firebase.init.js'
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
  const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -18,7 +19,7 @@ import { useNavigate } from 'react-router-dom';
         if (error) {
           return (
             <div>
-              <p>Error: {error.message}</p>
+              <p className='text-red-500 text-center mt-40 text-xl mb-40'>Error: {error.message}</p>
             </div>
           );
         }
@@ -28,17 +29,17 @@ import { useNavigate } from 'react-router-dom';
         
         
         if(error || gError){
-        signInError = <p className='text-red-500'>{error?.message || gError?.message}</p>
+        signInError = <p>{error?.message || gError?.message}</p>
         }
-        // if(gUser || user){
-        // navigate('/');
-        // }
+        if(gUser || user){
+        navigate('/');
+        }
 
   const onSubmit = data =>{
     signInWithEmailAndPassword(data.email, data.password);
   };
   return (
-    <div className='flex mt-24 mb-24 justify-center iteams-center'>
+    <div className='flex mt-20 mb-24 justify-center iteams-center'>
       <div className="card w-96 bg-base-100 shadow-xl">
   <div className="card-body">
     <h2 className="text-center text-2xl font-bold">Login</h2>
@@ -61,14 +62,14 @@ import { useNavigate } from 'react-router-dom';
       }
       )}
      />
-    </div>
+
     
     
     <label class="label">
      {errors.email?.type === 'required' && <span class="label-text-alt text-red-500">{errors.email.message}</span>}
      {errors.email?.type === 'pattern' && <span class="label-text-alt text-red-500">{errors.email.message}</span>}
      </label>
-    
+     </div>
     
     
     <div class="form-control w-full max-w-xs">
@@ -89,7 +90,7 @@ import { useNavigate } from 'react-router-dom';
       }
       )}
      />
-    </div>
+    
      
      
      <label class="label">
@@ -97,13 +98,16 @@ import { useNavigate } from 'react-router-dom';
      {errors.password?.type === 'minLength' && <span class="label-text-alt text-red-500">{errors.password.message}</span>}
      </label>
       
-     
+     </div>
 
      
+
      {signInError}
+     
       
       <input className='btn w-full max-w-xs mt-3' value="Login" type="submit" />
     </form>
+    <p>New to med care?? <Link to='/signup' className='text-green-600'>Create a new account</Link></p>
     <div className="divider">OR</div>
     <button onClick={() => signInWithGoogle()} className="btn btn-accent">Continue With Google</button>
   </div>

@@ -9,7 +9,7 @@ import {RiHeartPulseLine,   } from "react-icons/ri";
   return (
     <div className='item-all'>
          <h1 className='item-header'>MODERN SERVICE PHARMACY</h1>
-         <p className='item-para font-normal'><span className='ml-11'>At Medicine Center Compounding Pharmacy, we believe health is not just the absence </span>  <br/> <span className='ml-4'>of disease, but a state of immense vitality. It is our mission to help you feel better, live longer, </span>  <br/> <span className='ml-48'>and become the best possible you!</span> </p>
+         <p className='item-para font-normal'><span className='ml-11 item-span-1'>At Medicine Center Compounding Pharmacy, we believe health is not just the absence </span>  <br/> <span className='ml-4 item-span-2'>of disease, but a state of immense vitality. It is our mission to help you feel better, live longer, </span>  <br/> <span className='ml-48 item-span-3'>and become the best possible you!</span> </p>
          <div className='item-slide'>
          <div className="hero min-h-screen">
   <div className="hero-content item-slide-img flex-col lg:flex-row-reverse">

@@ -18,7 +18,7 @@
   border-radius: 7px;
   color: white;
 }
-@media  (min-width:300px) and (max-width:420px) 
+@media  (min-width:280px) and (max-width:350px) 
 {
     .banner-all{
         width: auto;
@@ -26,7 +26,22 @@
         background-color: darkcyan;
     }
     .banner-pic{
-        margin-left: -70px;
+        margin-left: -240px;
+        width:350px;
+        height: 440px;
+        
+    }
+}
+@media  (min-width:351px) and (max-width:420px) 
+{
+    .banner-all{
+        width: auto;
+        height: auto;
+        background-color: darkcyan;
+    }
+    .banner-pic{
+        margin-left: -150px;
+
     }
 }
 @media  (min-width:421px) and (max-width:540px) 
