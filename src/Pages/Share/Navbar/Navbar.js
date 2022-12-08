@@ -1,17 +1,28 @@
 import React, { useEffect } from 'react'
 import { $ } from 'react-jquery-plugin';
 import './Navbar.css'
-import img from '../../../image/10.png'
+import img from '../../../image/400.png'
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../src/firebase.init.js'
+import { useSignOut } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
 
  const Navbar = () => {
+  const [user] =useAuthState(auth);
+  const logout=()=>{
+    signOut(auth);
+  }
+
   useEffect(()=>{
   $(window).on('scroll',function(){
     if($(window).scrollTop()){
       $('nav').addClass('white');
+      
     }
     else{
       $('nav').removeClass('white');
+     
     }
   })
   },[]);
@@ -27,7 +38,7 @@ import { Link } from 'react-router-dom';
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">
+    <a className="btn btn-ghost normal-case text-xl navbar-image">
     <img  src={img} alt="" />
     </a>
   </div>
@@ -36,7 +47,10 @@ import { Link } from 'react-router-dom';
      
       <Link to="/"><li><a>Home</a></li></Link>
       <Link to="/appionment"><li><a>Appionment</a></li></Link>
-      <Link to="/login"><li><a>Login</a></li></Link>
+      {
+        user? <li><a onClick={logout}>Signout</a></li>  : <Link to="/login"><li><a>Login</a></li></Link>
+      }
+      
       <Link to="/signup"><li><a>Signup</a></li></Link>
       
       

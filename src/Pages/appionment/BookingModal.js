@@ -14,7 +14,7 @@ import { format } from 'date-fns';
 <div className="modal modal-bottom sm:modal-middle">
   <div className="modal-box">
   <label for="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-    <h3 className="font-bold text-lg text-secondary">Booking : {name}</h3>
+    <h3 className="font-bold text-lg text-green-400 ml-20">Booking : {name}</h3>
     <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-4 justify-items-center mt-5'>
     <input disabled type="text" value={format(date, 'PP')} className="input input-bordered w-full max-w-xs" />
     <select name='slot' className="select select-bordered w-full max-w-xs">

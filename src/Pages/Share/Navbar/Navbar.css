@@ -9,8 +9,13 @@
     background-color: rgb(80, 196, 157);
    
 }
+
 .ul-size{
     margin-left: 260px;
     font-size: 18px;
-    color: rgb(224, 184, 82);
+ color: rgb(29, 28, 28);
+}
+.navbar-image img{
+   margin-top: -5px;
+
 }

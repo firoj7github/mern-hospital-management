@@ -15,8 +15,9 @@
     background-color: rgb(80, 196, 157);
     width: 300px;
     height: 250px;
-    clip-path: polygon(0 1%, 100% 15%, 100% 90%, 0% 100%);
+    
     border-radius: 2px;
+    clip-path: polygon(0 0, 100% 15%, 100% 90%, 0 99%);
     z-index: 1;
 }
 .card-2{
@@ -31,10 +32,10 @@
     background-color: rgb(80, 196, 157);
     width: 300px;
     height: 250px;
-    clip-path: polygon(0 0, 100% 15%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 15%, 100% 90%, 0 99%);
     z-index: 1;
     
-    border-radius: 2px;
+   
     /* clip-path: polygon(0 1%, 100% 15%, 100% 90%, 0% 100%); */
 }
 .card-4{
