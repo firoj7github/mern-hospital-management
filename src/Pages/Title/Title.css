@@ -256,7 +256,7 @@ background-color: black;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: auto;
-        margin-left: 110px;
+        margin-left: 300px;
         padding-top: 130px;
     }
     .title-cover{

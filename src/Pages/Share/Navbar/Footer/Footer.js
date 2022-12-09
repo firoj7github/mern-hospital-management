@@ -8,13 +8,13 @@ import icon5 from '../../../../image/400.png'
     
   <img src={icon5} alt=""/>
 
-    <p>Med care hospital Ltd.<br/>Providing reliable tech since 1992</p>
+    <p>Aerobic hospital Ltd.<br/>Providing reliable tech since 1992</p>
   </div> 
   <div>
     <span className="footer-title">Services</span> 
-    <a className="link link-hover">Branding</a> 
-    <a className="link link-hover">Design</a> 
-    <a className="link link-hover">Marketing</a> 
+    <a className="link link-hover">Genaral</a> 
+    <a className="link link-hover">Home Care</a> 
+    <a className="link link-hover">Extra Care</a> 
     <a className="link link-hover">Advertisement</a>
   </div> 
   <div>

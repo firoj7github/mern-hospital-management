@@ -384,7 +384,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media  (min-width:821px) and (max-width:1024px) 
+@media  (min-width:821px) and (max-width:1050px) 
 {
     .item-all{
         width: auto;
