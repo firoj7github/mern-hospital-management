@@ -48,6 +48,9 @@ import { signOut } from 'firebase/auth';
       <Link to="/"><li><a>Home</a></li></Link>
       <Link to="/appionment"><li><a>Appionment</a></li></Link>
       {
+        user && <Link to="/dashboard"><li><a>Dashboard</a></li></Link>
+      }
+      {
         user? <li><a onClick={logout}>Signout</a></li>  : <Link to="/login"><li><a>Login</a></li></Link>
       }
       

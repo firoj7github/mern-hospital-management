@@ -2,7 +2,7 @@ import React from 'react'
 import { format } from 'date-fns';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast} from 'react-toastify';
 
  const BookingModal = ({treatment, date, setTreatment}) => {
     const{_id,name,slots}= treatment;
@@ -32,6 +32,12 @@ import { toast, ToastContainer } from 'react-toastify';
   })
   .then(res=>res.json())
   .then(result=>{
+    if(result.success){
+      toast(`appionment is set`)
+    }
+    else{
+      toast.error(`already have an appionment`)
+    }
     setTreatment(null); 
   })
    
