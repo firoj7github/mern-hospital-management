@@ -2,7 +2,7 @@ import React from 'react'
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../src/firebase.init.js'
 import { useForm } from "react-hook-form";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
  const Login = () => {
@@ -15,7 +15,10 @@ import { Link } from 'react-router-dom';
     error,
   ] = useSignInWithEmailAndPassword(auth);
 
-  const navigate =useNavigate();
+  let navigate =useNavigate();
+  let location = useLocation();
+   let from =location.state?.from?.pathname || "/";
+
         if (error) {
           return (
             <div>
@@ -32,7 +35,7 @@ import { Link } from 'react-router-dom';
         signInError = <p>{error?.message || gError?.message}</p>
         }
         if(gUser || user){
-        navigate('/');
+        navigate(from, {replace : true});
         }
 
   const onSubmit = data =>{
@@ -108,8 +111,8 @@ import { Link } from 'react-router-dom';
       <input className='btn w-full max-w-xs mt-3' value="Login" type="submit" />
     </form>
     <p>New to med care?? <Link to='/signup' className='text-green-600'>Create a new account</Link></p>
-    {/* <div className="divider">OR</div>
-    <button onClick={() => signInWithGoogle()} className="btn btn-accent">Continue With Google</button> */}
+    <div className="divider">OR</div>
+    <button onClick={() => signInWithGoogle()} className="btn btn-accent">Continue With Google</button>
   </div>
 </div>
     </div>
