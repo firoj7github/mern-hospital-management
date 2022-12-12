@@ -108,8 +108,7 @@ import { Link } from 'react-router-dom';
     <input className='btn w-full max-w-xs mt-3' value="Login" type="submit" />
   </form>
   <p>Already have an account? <Link to='/signup' className='text-green-600'>Plz login</Link></p>
-  <div className="divider">OR</div>
-  <button onClick={() => createUserWithEmailAndPassword()} className="btn btn-accent">Continue With Google</button>
+  
 </div>
 </div>
   </div>

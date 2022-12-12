@@ -1,5 +1,6 @@
 
- Client Live Link :https://idyllic-klepon-fcb5cc.netlify.app/
+ Client Side Live Link :https://loquacious-vacherin-7012b6.netlify.app/
+ 
 
 # Getting Started with Create React App
 
