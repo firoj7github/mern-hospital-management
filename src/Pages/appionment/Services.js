@@ -15,7 +15,7 @@ import React from 'react'
     <p>{slots.length} {slots.length>1 ? 'spaces': 'space'}  available</p>
     <div className="card-actions justify-end">
       
-      <label for="booking-modal" disabled={slots.length===0}
+      <label htmlFor="booking-modal" disabled={slots.length===0}
       onClick={()=>setTreatment(service)} className="btn btn-secondary-100">Book Appionment</label>
     </div>
   </div>
