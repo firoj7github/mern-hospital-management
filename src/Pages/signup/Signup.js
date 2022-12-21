@@ -4,6 +4,7 @@ import auth from '../../../src/firebase.init.js'
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import useToken from '../../Hooks/useToken.js';
 
  const Signup = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -14,6 +15,8 @@ import { Link } from 'react-router-dom';
     loading,
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
+
+  const [token]= useToken(gUser || user);
 
   const navigate =useNavigate();
         if (error) {
@@ -32,7 +35,7 @@ import { Link } from 'react-router-dom';
         signInError = <p>{error?.message || gError?.message}</p>
         }
         if(gUser || user){
-        navigate('/');
+        // navigate('/');
         }
 
   const onSubmit = data =>{
@@ -105,9 +108,12 @@ import { Link } from 'react-router-dom';
    {signInError}
    
     
-    <input className='btn w-full max-w-xs mt-3' value="Login" type="submit" />
+    <input className='btn w-full max-w-xs mt-3' value="signup" type="submit" />
   </form>
+  
   <p>Already have an account? <Link to='/signup' className='text-green-600'>Plz login</Link></p>
+  <div className="divider">OR</div>
+    <button onClick={() => signInWithGoogle()} className="btn btn-accent">Continue With Google</button>
   
 </div>
 </div>
