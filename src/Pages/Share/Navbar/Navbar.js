@@ -12,6 +12,7 @@ import { signOut } from 'firebase/auth';
   const [user] =useAuthState(auth);
   const logout=()=>{
     signOut(auth);
+    localStorage.removeItem('accessToken');
   }
 
   useEffect(()=>{

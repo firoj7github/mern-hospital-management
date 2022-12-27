@@ -34,8 +34,8 @@ import useToken from '../../Hooks/useToken.js';
         if(error || gError){
         signInError = <p>{error?.message || gError?.message}</p>
         }
-        if(gUser || user){
-        // navigate('/');
+        if(token){
+        navigate('/');
         }
 
   const onSubmit = data =>{
