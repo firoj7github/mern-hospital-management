@@ -13,6 +13,7 @@ import Dashboard from './Pages/dashboard/Dashboard';
 import MyAppionment from './Pages/dashboard/MyAppionment';
 import Reviews from './Pages/dashboard/Reviews';
 import Users from './Pages/dashboard/Users';
+import Payment from './Pages/dashboard/Payment';
 
 
 function App() {
@@ -33,10 +34,15 @@ function App() {
           </RequireAuth>
         
         }>
-          <Route index element={<MyAppionment></MyAppionment>}></Route>
+          <Route index element={<MyAppionment></MyAppionment>}>
+            
+          </Route>
           <Route path='review' element={<Reviews></Reviews>}></Route>
           <Route path='users' element={<Users></Users>}></Route>
-        </Route>
+       
+          <Route path='payment/:id' element={<Payment></Payment>}></Route>
+          </Route>
+       
         <Route path='/login' element={<Login></Login>}/>
         <Route path='/signup' element={<Signup></Signup>}/>
       </Routes>

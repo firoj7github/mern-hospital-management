@@ -21,6 +21,8 @@ const Dashboard = () => {
     <ul className="menu p-4 w-80 bg-slate-400 sidebar text-base-content">
   
       <li><Link to='/dashboard' className='bg-green-300 mt-5 mb-3' >My Appionment</Link></li>
+      <li><Link to='/dashboard/payment/:id' className='bg-green-300 mb-3' >Payment</Link></li>
+      
       <li><Link to='/dashboard/review' className='bg-green-300 mb-3'>Review</Link></li>
       {admin &&<li><Link to='/dashboard/users' className='bg-green-300'>All Users</Link></li>}
     </ul>
