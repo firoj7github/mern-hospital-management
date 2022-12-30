@@ -9,8 +9,8 @@ const stripePromise = loadStripe('pk_test_51MKcbcJC4DjQ4iiXWgMbhZvUwqwjmIlPgSxwJ
 
  const Payment = () => {
     const {id}=useParams();
-    const [payment, setPayment]= useState([]);
-    console.log(payment);
+    const [payments, setPayment]= useState([]);
+  
   useEffect(()=>{
        fetch(`http://localhost:5000/booking/${id}`,{
         method: 'GET',
@@ -23,36 +23,35 @@ const stripePromise = loadStripe('pk_test_51MKcbcJC4DjQ4iiXWgMbhZvUwqwjmIlPgSxwJ
     },[]);
   return (
     <div>
-        <div class="hero min-h-screen bg-base-200">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-  <div class="card w-50 max-w-md bg-base-100 shadow-xl">
-  <div class="card-body">
-    {
-      payment.map(pay=>{
-        <div>
-          <h2 class="card-title">Pay for{pay.treatment}</h2>
-        <p>We will see you on{payment}</p>
-        </div>
         
-      })
-    }
+  <div class="card w-50 max-w-md bg-base-100 mt-5 ml-40 mb-4 bg-green-100">
+  <div class="card-body">
     
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
+        
+
+     
+          <h2 class="card-title">Pay for {payments.treatment}</h2>
+        <p>We will see you on <span className='text-orange-700'>{payments.date}</span> at <span>{payments.slot}</span></p>
+        <p>Please Pay: ${payments.price}</p>
+
+        
+        
+     
+ 
+    
+    
   </div>
 </div>
-    <div class="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100">
+    <div class="card flex-shrink-0 w-50 max-w-md ml-40 ">
       <div class="card-body">
       <Elements stripe={stripePromise}>
-    <CheckoutForm />
+    <CheckoutForm payments={payments} />
   </Elements>
        
         
       </div>
     </div>
-  </div>
-</div>
+  
 
     </div>
   )
