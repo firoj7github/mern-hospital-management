@@ -1,15 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+
+import { useQuery } from 'react-query'
 import {loadStripe} from '@stripe/stripe-js';
-import { Elements } from '@stripe/react-stripe-js';
+import { Elements, useElements, useStripe } from '@stripe/react-stripe-js';
 import CheckoutForm from './CheckoutForm';
+import axios from 'axios';
+import StripeCheckout from 'react-stripe-checkout';
+// import Swal from 'sweetalert2';
 
 
-const stripePromise = loadStripe('pk_test_51MKcbcJC4DjQ4iiXWgMbhZvUwqwjmIlPgSxwJDkD0t0zLPGPzsPWPyLnNcCPpSR9r1fjavSMTabkXKx7pWOuS3Av00RvtWo6rI');
+// const stripePromise = loadStripe('pk_test_51MKcbcJC4DjQ4iiXWgMbhZvUwqwjmIlPgSxwJDkD0t0zLPGPzsPWPyLnNcCPpSR9r1fjavSMTabkXKx7pWOuS3Av00RvtWo6rI');
 
- const Payment = () => {
+ const Payment = (props) => {
+  // const stripe = useStripe();
+  //   const elements = useElements();
+
+  const publishableKey =
+    'pk_test_51MKcbcJC4DjQ4iiXWgMbhZvUwqwjmIlPgSxwJDkD0t0zLPGPzsPWPyLnNcCPpSR9r1fjavSMTabkXKx7pWOuS3Av00RvtWo6rI';
+  
     const {id}=useParams();
-    const [payments, setPayment]= useState([]);
+    
+    const [appionment, setPayment]= useState([]);
+  
+ 
   
   useEffect(()=>{
        fetch(`http://localhost:5000/booking/${id}`,{
@@ -21,6 +35,31 @@ const stripePromise = loadStripe('pk_test_51MKcbcJC4DjQ4iiXWgMbhZvUwqwjmIlPgSxwJ
       .then(res=>res.json())
       .then(data=>setPayment(data));
     },[]);
+    const priceForStripe = appionment.price * 100;
+
+    
+
+
+
+    const payNow = async token => {
+      try {
+        const response = await axios({
+          url: 'http://localhost:5000/payment',
+          method: 'post',
+          data: {
+            amount: appionment.price * 100,
+            token,
+          },
+        });
+        
+      } catch (error) {
+        
+        console.log(error);
+      }
+    };
+
+   
+    
   return (
     <div>
         
@@ -30,9 +69,9 @@ const stripePromise = loadStripe('pk_test_51MKcbcJC4DjQ4iiXWgMbhZvUwqwjmIlPgSxwJ
         
 
      
-          <h2 class="card-title">Pay for {payments.treatment}</h2>
-        <p>We will see you on <span className='text-orange-700'>{payments.date}</span> at <span>{payments.slot}</span></p>
-        <p>Please Pay: ${payments.price}</p>
+          <h2 class="card-title">Pay for {appionment.treatment}</h2>
+        <p>We will see you on <span className='text-orange-700'>{appionment.date}</span> at <span>{appionment.slot}</span></p>
+        <p>Please Pay: ${appionment.price}</p>
 
         
         
@@ -44,10 +83,17 @@ const stripePromise = loadStripe('pk_test_51MKcbcJC4DjQ4iiXWgMbhZvUwqwjmIlPgSxwJ
 </div>
     <div class="card flex-shrink-0 w-50 max-w-md ml-40 ">
       <div class="card-body">
-      <Elements stripe={stripePromise}>
-    <CheckoutForm payments={payments} />
-  </Elements>
-       
+     
+
+<StripeCheckout
+        stripeKey={publishableKey}
+        label="Pay Now"
+        amount={priceForStripe}
+        token={payNow}
+        
+      />
+    
+          
         
       </div>
     </div>
