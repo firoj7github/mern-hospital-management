@@ -91,7 +91,7 @@ import StripeCheckout from 'react-stripe-checkout';
         amount={priceForStripe}
         token={payNow}
         
-      />
+/>
     
           
         
