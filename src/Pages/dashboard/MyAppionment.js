@@ -9,7 +9,7 @@ import auth from '../../firebase.init';
   const [appoinment, setAppionment]= useState([]);
   useEffect(()=>{
     if(user){
-      fetch(`http://localhost:5000/booking?patientEmail=${user.email}`,{
+      fetch(`https://hospital-management-server-eight.vercel.app/booking?patientEmail=${user.email}`,{
         method: 'GET',
         headers:{
           'authorization':`Bearer ${localStorage.getItem('accessToken')}`
@@ -26,8 +26,8 @@ import auth from '../../firebase.init';
     <div>
  
             <h2 className='text-center pt-5 text-2xl pb-5 font-bold'>MY APPIONMENT</h2>
-            <div class="overflow-x-auto">
-  <table class="table w-full">
+            <div className="overflow-x-auto">
+  <table className="table w-full">
    
     <thead>
       <tr>

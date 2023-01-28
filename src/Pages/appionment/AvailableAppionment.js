@@ -7,7 +7,7 @@ import BookingModal from './BookingModal';
     const [services, setServices]=useState([]);
     const [treatment, setTreatment]=useState(null);
     useEffect(()=>{
-        fetch('http://localhost:5000/service')
+        fetch('https://hospital-management-server-eight.vercel.app/service')
         // fetch('services.json')
         .then(res =>res.json())
         .then(data => setServices(data));

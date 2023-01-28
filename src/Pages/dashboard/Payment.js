@@ -26,7 +26,7 @@ import StripeCheckout from 'react-stripe-checkout';
  
   
   useEffect(()=>{
-       fetch(`http://localhost:5000/booking/${id}`,{
+       fetch(`https://hospital-management-server-eight.vercel.app/booking/${id}`,{
         method: 'GET',
         headers:{
           'authorization':`Bearer ${localStorage.getItem('accessToken')}`
@@ -44,7 +44,7 @@ import StripeCheckout from 'react-stripe-checkout';
     const payNow = async token => {
       try {
         const response = await axios({
-          url: 'http://localhost:5000/payment',
+          url: 'https://hospital-management-server-eight.vercel.app/payment',
           method: 'post',
           data: {
             amount: appionment.price * 100,
@@ -63,13 +63,13 @@ import StripeCheckout from 'react-stripe-checkout';
   return (
     <div>
         
-  <div class="card w-50 max-w-md bg-base-100 mt-5 ml-40 mb-4 bg-green-100">
-  <div class="card-body">
+  <div className="card w-50 max-w-md bg-base-100 mt-5 ml-40 mb-4 bg-green-100">
+  <div className="card-body">
     
         
 
      
-          <h2 class="card-title">Pay for {appionment.treatment}</h2>
+          <h2 className="card-title">Pay for {appionment.treatment}</h2>
         <p>We will see you on <span className='text-orange-700'>{appionment.date}</span> at <span>{appionment.slot}</span></p>
         <p>Please Pay: ${appionment.price}</p>
 
@@ -81,8 +81,8 @@ import StripeCheckout from 'react-stripe-checkout';
     
   </div>
 </div>
-    <div class="card flex-shrink-0 w-50 max-w-md ml-40 ">
-      <div class="card-body">
+    <div className="card flex-shrink-0 w-50 max-w-md ml-40 ">
+      <div className="card-body">
      
 
 <StripeCheckout
