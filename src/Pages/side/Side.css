@@ -204,3 +204,243 @@
         display: none;
     }
 }
+@media  (min-width:1370px) and (max-width:1430px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1200px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 300px;
+    }
+}
+@media  (min-width:1431px) and (max-width:1480px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1300px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 330px;
+    }
+}
+@media  (min-width:1481px) and (max-width:1520px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1300px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 360px;
+    }
+}
+@media  (min-width:1521px) and (max-width:1570px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1300px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 390px;
+    }
+}
+@media  (min-width:1571px) and (max-width:1620px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1300px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 420px;
+    }
+}
+@media  (min-width:1621px) and (max-width:1670px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1300px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 450px;
+    }
+}
+@media  (min-width:1671px) and (max-width:1720px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1300px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 470px;
+    }
+}
+@media  (min-width:1721px) and (max-width:1770px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1300px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 500px;
+    }
+}
+@media  (min-width:1771px) and (max-width:1820px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1400px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 530px;
+    }
+}
+@media  (min-width:1821px) and (max-width:1880px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1400px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 560px;
+    }
+}
+@media  (min-width:1881px) and (max-width:1920px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1400px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 590px;
+    }
+}
+@media  (min-width:1921px) and (max-width:1980px) 
+{
+    
+    .side{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1400px;
+        height:700px;
+        gap: 22px;
+        margin: 0 auto;
+        border-radius: 7px;
+        padding-top: 42px;
+        
+        
+        
+    }
+    .side-dec{
+        margin-left: 610px;
+    }
+}

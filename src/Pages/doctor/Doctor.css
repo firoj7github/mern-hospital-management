@@ -169,3 +169,263 @@
          
      }
 }
+@media  (min-width:1350px) and (max-width:1400px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 370px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1401px) and (max-width:1450px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 390px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1451px) and (max-width:1500px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 395px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1501px) and (max-width:1550px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 425px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1551px) and (max-width:1600px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 455px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1601px) and (max-width:1650px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 485px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1651px) and (max-width:1700px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 500px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1701px) and (max-width:1750px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 520px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1751px) and (max-width:1800px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 550px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1801px) and (max-width:1850px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 580px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1851px) and (max-width:1900px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 615px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1901px) and (max-width:1950px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 650px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
+@media  (min-width:1951px) and (max-width:2000px) 
+{
+    
+    .doctor{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 75px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-left: 120px;
+        
+    }
+    .doctor-para{
+        margin-left: 685px;
+        width: 700px;
+        font-size: 17px;
+        
+    }
+}
